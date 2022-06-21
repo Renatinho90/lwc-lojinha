@@ -1,0 +1,61 @@
+<template>
+
+	<div class="slds-card">
+		<span class="nomeProduto"> Viola Caipira </span>
+		<lightning-button variant="brand" label="Marrom" onclick={violaoMarrom} class="slds-m-left_x-small">
+		</lightning-button>
+		<lightning-button variant="brand" label="Preto" onclick={violaoPreto} class="slds-m-left_x-small">
+		</lightning-button>
+
+		<lightning-button variant="brand" label="Roxo" onclick={violaoRoxo} class="slds-m-left_x-small">
+		</lightning-button>
+
+		<span class="precoProduto"> R$200 </span>
+
+		<!-- Essa imagem só deve aparecer quando isViolaoMarrom for verdade -->
+		<!-- if true > Só vai aparecer se a variavel for verdadeira  -->
+		<template if:true={isViolaoMarrom}>
+			<img src="https://a-static.mlcdn.com.br/1500x1500/violao-strinberg-sd200c-sms-folk-aco-eletroacustico-marrom-fosco/x5-music/12405449/ea85d0a033f1583870d92fe0f560e98e.jpg" width="100px">
+		</template>
+
+		<template if:true={isViolaoRoxo}>
+			<img src="https://images.colombo.com.br/produtos/4481573/4481573_Violao_Acustico_de_Nylon_TCG_390_Roxo_Thomaz_12545635_z.jpg" width="100px">
+		</template>
+
+		<template if:true={isViolaoPreto}>
+			<img src="https://a-static.mlcdn.com.br/1500x1500/violao-eletronico-acustico-cutway-preto-aubvo621e1-auburn/estrela10/157477/516c7e9b81d171cd6b08a29416bb08b9.jpg" width="100px">
+		</template>
+	</div>
+	<!-- 
+	<div class="slds-card">
+		<span class="nomeProduto"> Oboé </span>
+		<lightning-button variant="brand" label="Marrom" onclick={handleClick} class="slds-m-left_x-small">
+		</lightning-button>
+		<lightning-button variant="brand" label="Preto" onclick={handleClick} class="slds-m-left_x-small">
+		</lightning-button>
+
+		<lightning-button variant="brand" label="Roxo" onclick={handleClick} class="slds-m-left_x-small">
+		</lightning-button>
+
+		<span class="precoProduto"> R$5500 </span>
+		<img src="http://atlas-content-cdn.pixelsquid.com/stock-images/oboe-k1EvlaE-600.jpg" width="200px">
+	</div>
+
+	<div class="slds-card">
+		<span class="nomeProduto"> Guitarra Fender </span>
+		<lightning-button variant="brand" label="Marrom" onclick={handleClick} class="slds-m-left_x-small">
+		</lightning-button>
+		<lightning-button variant="brand" label="Preto" onclick={handleClick} class="slds-m-left_x-small">
+		</lightning-button>
+
+		<lightning-button variant="brand" label="Roxo" onclick={handleClick} class="slds-m-left_x-small">
+		</lightning-button>
+
+		<span class="precoProduto"> R$5500 </span>
+		<img src="https://cdn.awsli.com.br/600x450/1005/1005709/produto/50547656/61f4d5dd77.jpg" width="200px">
+	</div>
+	<div>
+	
+	</div>
+-->
+</template>
